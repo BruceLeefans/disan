@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录模块</title>
+	<style>
+	a {
+		text-decoration: none;
+	}
+	.login {
+		width: 443px;
+		height: 476px;
+		/* background-color: pink; */
+		margin: 0 auto;
+		border: 1px solid deeppink;
+		border-radius: 5px;
+	}
+	.one,
+	.two {
+		width: 340px;
+		height: 42px;
+		margin-left: 42px;
+		padding-left: 19px;
+		background-color: #fafcff;
+		border: 1px solid #e5e6e8;
+	}
+	.one {
+		margin-top: 75px;
+	}
+	.two {
+		margin-top: 30px;
+	}
+	.password {
+		width: 359px;
+		height: 76px;
+		margin-left: 43px;
+		/* background-color: green; */
+		line-height: 76px;
+	}
+	.remenber {
+		width: 13px;
+		height: 13px;
+		vertical-align: middle;
+/* 		border: 1px solid #900; */
+	}
+	.forget {
+		display: inline-block;
+		width: 265px;
+		height: 76px;	
+		/* background-color: yellow; */
+		padding-right: 0px;
+	}
+	.forget a {
+		display: inline-block;
+		width: 265px;
+		height: 76px;
+		text-align: right;
+	}
+/* 	.sublogin {
+		width: 359px;
+		height: 42px;
+		margin-left: 43px;
+		background-color: #000;
+		line-height: 42px;
+		text-align: center;	
+		border: 1px solid #000;	
+		border-radius: 5px;
+	}
+	.sublogin a {
+		color: #fff;
+	} */
+	.sublogin-two {
+		width: 359px;
+		height: 42px;
+		margin-left: 43px;
+		background-color: #000;
+		line-height: 42px;
+		text-align: center;	
+		border: 1px solid #000;	
+		border-radius: 5px;
+		color: #fff;
+	}
+
+	.way {
+		width: 359px;
+		height: 46px;
+		margin: 32px 0 0 43px;
+		text-align: right;
+		/* background-color: red; */
+	}
+	.way a {
+		color: #999;
+	}
+	.footer {
+		width: 359px;
+		height: 60px;
+		margin-left: 43px;
+		/* background-color: blue; */
+	}
+	.footer a {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		margin-right: 34px;
+	}
+
+	.footer a:first-child {
+		background: url(登录模块练习/login_icons.png) no-repeat 0 0;
+	}
+	.footer a:nth-child(2) {
+		background: url(登录模块练习/login_icons.png) no-repeat -60px 0;
+	}
+	.footer a:nth-child(3) {
+		background: url(登录模块练习/login_icons.png) no-repeat -120px 0;
+	}
+	.footer a:nth-child(4) {
+		background: url(登录模块练习/login_icons.png) no-repeat -180px 0;
+		margin-right: 0;
+	}
+	.footer a:first-child:hover {
+		background: url(登录模块练习/login_icons.png) no-repeat 0 -60px;
+	}
+	.footer a:nth-child(2):hover {
+		background: url(登录模块练习/login_icons.png) no-repeat -60px -60px;
+	}
+	.footer a:nth-child(3):hover {
+		background: url(登录模块练习/login_icons.png) no-repeat -120px -60px;
+	}
+	.footer a:nth-child(4):hover {
+		background: url(登录模块练习/login_icons.png) no-repeat -180px -60px;
+		margin-right: 0;
+	}
+
+
+	</style>
+</head>
+<body>
+	<form action="method">
+		<div class="login">
+			<input class="one" type="email" name="email" placeholder="邮箱、手机" required>
+			<input class="two" type="password" name="pwd" placeholder="密码">		
+			<div class="password">
+				<input class="remenber" type="checkbox" name="remenber" id="jizhu">	
+				<label for="jizhu">记住密码</label>		
+				<div class="forget"><a href="#">忘记密码?</a></div>
+			</div>
+			<!-- <div class="sublogin">
+				<a href="#">登录</a>
+			</div> -->
+			<input class="sublogin-two" type="submit" value="登录">
+			<div class="way">
+				<a href="#">还没账号,</a>
+				使用以下方式登录
+			</div>
+			<div class="footer">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
